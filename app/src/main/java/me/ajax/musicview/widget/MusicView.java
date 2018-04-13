@@ -1,4 +1,4 @@
-package me.ajax.musicview.weiget;
+package me.ajax.musicview.widget;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
