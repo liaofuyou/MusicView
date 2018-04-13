@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.graphics.CornerPathEffect;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
@@ -16,8 +17,6 @@ import android.util.Log;
 import android.view.View;
 
 import java.util.Random;
-
-import me.ajax.musicview.utils.GeometryUtils;
 
 import static me.ajax.musicview.utils.GeometryUtils.polarX;
 import static me.ajax.musicview.utils.GeometryUtils.polarY;
@@ -246,7 +245,7 @@ public class MusicView extends View {
             postInvalidate();
         }
     }
-/*
+
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
@@ -254,15 +253,9 @@ public class MusicView extends View {
     }
 
     private void stopAnimAndRemoveCallbacks() {
-
-        if (waterDropAnimator != null) waterDropAnimator.end();
-        if (waveAnimator1 != null) waveAnimator1.end();
-        if (waveAnimator2 != null) waveAnimator2.end();
-        if (waveAnimator3 != null) waveAnimator3.end();
-
         Handler handler = this.getHandler();
         if (handler != null) {
             handler.removeCallbacksAndMessages(null);
         }
-    }*/
+    }
 }
